@@ -9,13 +9,17 @@ import SwiftUI
 
 let staticData: [Quake] = [
     Quake(magnitude: 0.8,
+          type: "earthquake",
           place: "Shakey Acres",
           time: Date(timeIntervalSinceNow: -1000),
+          tsunami: 0,
           code: "nc73649170",
           detail: URL(string: "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/nc73649170.geojson")!),
     Quake(magnitude: 2.2,
+          type: "earthquake",
           place: "Rumble Alley",
           time: Date(timeIntervalSinceNow: -5000),
+          tsunami: 0,
           code: "hv72783692",
           detail: URL(string: "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/hv72783692")!)
     ]
